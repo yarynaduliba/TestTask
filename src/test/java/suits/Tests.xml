@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Projects">
+    <test name="Projects">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="example.CreatePlayerTests">
+                <methods>
+                    <include name="adminCanCreateUser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
