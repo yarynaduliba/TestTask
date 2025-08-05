@@ -1,16 +1,17 @@
 package example;
 
+import io.qameta.allure.testng.AllureTestNg;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import java.util.List;
 import java.util.Map;
 import io.restassured.path.json.JsonPath;
+import org.testng.annotations.Listeners;
+
 
 import static io.restassured.RestAssured.given;
-
 public class DeletePlayerTests extends Base{
-
 
     @Test
     public void verifyUserCanBeDeletedBySupervisor() {

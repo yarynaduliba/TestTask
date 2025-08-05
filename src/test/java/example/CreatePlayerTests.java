@@ -3,8 +3,13 @@ package example;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import io.qameta.allure.Step;
+import io.qameta.allure.testng.AllureTestNg;
+import org.testng.annotations.Listeners;
+
 
 public class CreatePlayerTests extends Base {
+
 
     @Test
     public void verifySupervisorCanCreateUser() {
